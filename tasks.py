@@ -1,7 +1,7 @@
-from RPA.Browser import Browser
+from RPA.Browser.Selenium import Selenium
 from RPA.FileSystem import FileSystem
 
-browser = Browser()
+browser = Selenium()
 file_system = FileSystem()
 url = "https://robotframework.org/"
 

@@ -6,7 +6,7 @@ Documentation     A simple web scraper robot.
 ...               Opens a website.
 ...               Stores the web page text in a file in the output directory.
 ...               Saves a screenshot of an element in the output directory.
-Library           RPA.Browser
+Library           RPA.Browser.Selenium
 Library           RPA.FileSystem
 
 *** Variables ***
