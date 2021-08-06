@@ -17,7 +17,7 @@ def main():
     try:
         store_web_page_content()
     finally:
-        browser.close_all_browsers()
+        browser.close_browser()
 
 
 if __name__ == "__main__":
