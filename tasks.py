@@ -2,14 +2,12 @@ from RPA.Browser.Selenium import Selenium
 from RPA.FileSystem import FileSystem
 
 browser = Selenium()
-file_system = FileSystem()
-url = "https://robotframework.org/"
 
 
 def store_web_page_content():
-    browser.open_available_browser(url)
+    browser.open_available_browser("https://robotframework.org/")
     text = browser.get_text("css:body")
-    file_system.create_file("output/text.txt", text, overwrite=True)
+    FileSystem().create_file("output/text.txt", text, overwrite=True)
     browser.screenshot("css:h1", "output/screenshot.png")
 
 
@@ -22,5 +20,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-

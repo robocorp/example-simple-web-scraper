@@ -9,18 +9,10 @@ Documentation     A simple web scraper robot.
 Library           RPA.Browser.Selenium
 Library           RPA.FileSystem
 
-*** Variables ***
-${URL}=           https://robotframework.org/
-
 *** Tasks ***
 Store Web Page Content
-    Open Available Browser    ${URL}
+    Open Available Browser    https://robotframework.org/
     ${text}=    Get Text    css:body
-    Create File
-    ...    ${CURDIR}${/}output${/}text.txt
-    ...    ${text}
-    ...    overwrite=True
-    Screenshot
-    ...    css:h1
-    ...    ${CURDIR}${/}output${/}screenshot.png
+    Create File    ${OUTPUT_DIR}${/}text.txt    ${text}    overwrite=True
+    Screenshot    css:h1    ${OUTPUT_DIR}${/}screenshot.png
     [Teardown]    Close Browser
