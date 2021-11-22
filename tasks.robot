@@ -15,12 +15,12 @@ ${URL}=           https://robotframework.org/
 *** Tasks ***
 Store Web Page Content
     Open Available Browser    ${URL}
-    ${text}=    Get Text    scroller
+    ${text}=    Get Text    css:body
     Create File
     ...    ${CURDIR}${/}output${/}text.txt
     ...    ${text}
     ...    overwrite=True
     Screenshot
-    ...    css:.img-fluid
+    ...    css:h1
     ...    ${CURDIR}${/}output${/}screenshot.png
     [Teardown]    Close Browser

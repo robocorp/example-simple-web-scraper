@@ -8,9 +8,9 @@ url = "https://robotframework.org/"
 
 def store_web_page_content():
     browser.open_available_browser(url)
-    text = browser.get_text("scroller")
+    text = browser.get_text("css:body")
     file_system.create_file("output/text.txt", text, overwrite=True)
-    browser.screenshot("css:.img-fluid", "output/screenshot.png")
+    browser.screenshot("css:h1", "output/screenshot.png")
 
 
 def main():
