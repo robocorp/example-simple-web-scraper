@@ -1,13 +1,12 @@
-# ## Simple web scraper robot
-# Opens a web page and stores some content.
-
 *** Settings ***
-Documentation     A simple web scraper robot.
-...               Opens a website.
-...               Stores the web page text in a file in the output directory.
-...               Saves a screenshot of an element in the output directory.
-Library           RPA.Browser.Selenium
-Library           RPA.FileSystem
+Documentation       A simple web scraper robot.
+...                 Opens a website.
+...                 Stores the web page text in a file in the output directory.
+...                 Saves a screenshot of an element in the output directory.
+
+Library             RPA.Browser.Selenium
+Library             RPA.FileSystem
+
 
 *** Tasks ***
 Store Web Page Content
