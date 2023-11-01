@@ -13,7 +13,7 @@ When run, the robot will:
 - store the text content of each tweet in separate files in the directory
 - store a screenshot of each tweet in the directory
 
-![Tweet screenshot](tweet.png)
+![Tweet screenshot](readme-resources/tweet.png)
 
 > Because Twitter blocks requests coming from the cloud, this robot can only be executed on a local machine or triggered from [Control Room](/control-room) using [Robocorp Assistant](/control-room/unattended).
 
