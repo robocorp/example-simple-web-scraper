@@ -78,8 +78,6 @@ The screen output will look similar to this:
 
 You executed a web scraper task, congratulations!
 
-During the process, you learned some concepts and features of the Robot Framework and some good practices:
-
 - How to set up a project and its dependencies
 - How to define a task
 - Use the `browser` library provided by `robocorp`
