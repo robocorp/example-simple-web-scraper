@@ -47,11 +47,12 @@ You can easily execute the `@task` using the [Robocorp Code VSCode Extension](ht
 
 Find comments and helpful insights in the code itself.
 
+> Note on creating locators: Simply put, a locator is an object constructed after a selector is executed.
+> The selector value is usually pretty difficult to construct. As such, you can use the `Robocorp Web Inspector`
+> from the [Robocorp Code VSCode Extension](https://marketplace.visualstudio.com/items?itemName=robocorp.robocorp-code)
+> to build valid selectors with ease.
 
-When the `@task` finishes it's execution you can take a look inside the `output` folder and find different files related to the execution.
-Be that log files, journals, but also the CSV output of the `@task`: `top-10-cryptos-(today's date).csv`
-
-The screen output will look similar to this:
+When the `@task` finishes executing, the screen output will look similar to this:
 ```
 ##################################################
 ### Top 10 Cryptocurrencies:
@@ -69,10 +70,15 @@ The screen output will look similar to this:
 ##################################################
 ```
 
-> Note on creating locators: Simply put, a locator is an object constructed after a selector is executed.
-> The selector value is usually pretty difficult to construct. As such, you can use the `Robocorp Web Inspector`
-> from the [Robocorp Code VSCode Extension](https://marketplace.visualstudio.com/items?itemName=robocorp.robocorp-code)
-> to build valid selectors with ease.
+You can take a look inside the `output` folder and find different files related to the execution.
+The `output` folder will contain log files, journals, but also the CSV output of the `@task`: `top-10-cryptos-(today's date).csv`
+
+> Note: It is important to know that the Control Room Work Items will & should be part of the `output` folder as well.
+
+There you can find the `log.html` file that you might find interesting.
+It will provide you with keen insights into the `@task` execution in a detailed and nicely formatted log.
+
+> Note: Observe how the `print` function is called and displayed in the `log.html` format.
 
 ## Summary
 
