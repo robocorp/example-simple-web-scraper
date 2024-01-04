@@ -7,10 +7,12 @@ dependencies:
   # If available, always prefer the conda version of a package.
   # Installation will be faster and more efficient.
   # https://anaconda.org/search
-  - python=3.9.13               # https://pyreadiness.org/3.9/ 
+  - python=3.10.12                # https://pyreadiness.org/3.10
+  - pip=23.2.1                    # https://pip.pypa.io/en/stable/news
+  - robocorp-truststore=0.8.0     # https://pypi.org/project/robocorp-truststore/
 
-  - pip=22.3                    # https://pip.pypa.io/en/stable/news/
   - pip:
       # Define pip packages here.
       # https://pypi.org/
-      - rpaframework==19.0.0    # https://rpaframework.org/releasenotes.html
+      - robocorp==1.2.4 # https://pypi.org/project/robocorp
+      - robocorp-browser==2.2.1 # https://pypi.org/project/robocorp-browser/
